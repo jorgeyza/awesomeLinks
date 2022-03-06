@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
   images: {
     /**
      * ! Highly suggested to have your max content width defined here (it will better optimize the image size)
@@ -8,10 +7,11 @@ const nextConfig = {
      * ! Makes sure values here are in sync with `helper/Image.ts`
      */
     deviceSizes: [320, 480, 640, 750, 828, 992, 1080, 1200, 1440, 1920, 2048, 2560, 3840],
-    domains: [],
+    domains: ['localhost'],
     formats: ['image/avif', 'image/webp'],
-    minimumCacheTTL: 86400 // if `no max-age` or `s-max-age` defined for an image, cache it `1 day`
-  }
+    minimumCacheTTL: 86400 // if `no max-age` or `s-max-age` defined for an image, cache it `1 day`,
+  },
+  reactStrictMode: true
 };
 
 module.exports = nextConfig;
