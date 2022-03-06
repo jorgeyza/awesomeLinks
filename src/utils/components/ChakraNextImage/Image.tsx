@@ -94,7 +94,7 @@ import {
   useImageStyle,
   type GenerateImageAttributesReturn,
   type ImageProps
-} from 'utils/ChakraNextImage/ImageHelper';
+} from 'utils/components/ChakraNextImage/ImageHelper';
 import { Rename } from 'utils/types';
 
 /** *******************************************************************************************************************
