@@ -1,8 +1,8 @@
 export const globalStyles = {
   global: {
     _selection: {
-      backgroundColor: 'text',
-      color: 'white'
+      backgroundColor: 'yellow.200',
+      color: 'gray.700'
     }
   }
 };
