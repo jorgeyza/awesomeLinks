@@ -1,12 +1,10 @@
-import Layout from 'components/Layout';
+import { Container, Heading } from '@chakra-ui/react';
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
 
-const Home: NextPage = () => {
-  const lle = '';
-
-  return <div />;
-};
+const Home: NextPage = () => (
+  <Container maxW='container.md'>
+    <Heading as='h1'>Register</Heading>
+  </Container>
+);
 
 export default Home;
